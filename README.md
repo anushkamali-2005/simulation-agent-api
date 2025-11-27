@@ -1,6 +1,6 @@
 # Simulation Agent API
 
-REST API for testing and evaluating medical AI models through clinical simulations.
+A focused REST API for testing and evaluating medical AI models through clinical simulations.
 
 ## 🚀 Quick Start
 
@@ -23,6 +23,25 @@ See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions.
 - `POST /api/simulation/compare-answers` - Compare model vs benchmark answers
 - `POST /api/simulation/run` - Run complete simulation workflow
 
+## 📁 Project Structure
+
+```
+simulation-agent-api/
+├── agents/                    # Agent implementations
+│   ├── agent_2_simulation/   # Core simulation agent
+│   ├── base/                 # Base agent classes
+│   └── shared/               # Shared utilities
+├── src/                      # API source code
+│   ├── api/                  # FastAPI routes and schemas
+│   ├── config/               # Configuration
+│   ├── database/             # Database models
+│   ├── models/               # Data models
+│   ├── services/             # Business logic
+│   └── utils/                # Utilities
+├── run_api.py               # API launcher
+└── requirements-api.txt     # Dependencies
+```
+
 ## 📚 Documentation
 
 - **Usage Guide**: [API_USAGE.md](API_USAGE.md)
@@ -39,3 +58,4 @@ See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions.
 ## 📄 License
 
 MIT
+
